@@ -1,0 +1,5 @@
+project: werf-java-app
+configVersion: 1
+---
+image: java-test-1
+dockerfile: Dockerfile
