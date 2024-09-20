@@ -28,5 +28,5 @@ jobs:
     - name: post-unit-tests
       uses: werf/actions/run@v2
       with:
-        image: java-test-1
+        image: ${{ secrets.WERF_REPO }}/java-helloworld
         args: mvn test
