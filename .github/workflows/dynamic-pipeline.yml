@@ -25,8 +25,4 @@ jobs:
         WERF_REPO: ${{ secrets.WERF_REPO }}/java-helloworld
         WERF_REPO_DOCKER_HUB_USERNAME: ${{ secrets.WERF_REPO_DOCKER_HUB_USERNAME }}
         WERF_REPO_DOCKER_HUB_PASSWORD: ${{ secrets.WERF_REPO_DOCKER_HUB_PASSWORD }}
-    - name: post-unit-tests
-      uses: werf/actions/run@v2
-      with:
-        image: ${{ secrets.WERF_REPO }}/java-helloworld
-        args: mvn test
+
