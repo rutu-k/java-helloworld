@@ -28,5 +28,5 @@ jobs:
     - name: post-unit-tests
       uses: werf/actions/run@v2
       with:
-        image: app-test-4
+        image: java-test-1
         args: mvn test
